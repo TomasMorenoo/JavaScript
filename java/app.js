@@ -29,7 +29,7 @@ precios = {
     3: 9500,
     4: 5500
 };
-ropa = ["Shorts", "Remeras", "Zapatillas", "Pantalones Largos"];
+ropa = ["Shorts", "Remeras", "Zapatillas", `Pantalones Largos`];
 despedida = "Gracias por visitar nuestro menú interactivo...\nRedirigiendo hacia el inicio...";
 color = ["Negro", "Blanco", "Azul Francia", "Rosa", "Verde Militar"];
 metodoDePago = "Contamos con los siguientes métodos de pago:\n1) 1, 3 y hasta 6 cuotas sin interés con tarjeta de crédito \n2) 10% de descuento en efectivo \n3) Tarjeta de débito";
@@ -72,7 +72,7 @@ do {
             let realizarNuevaCompra = true;
             
             do {
-                opcionA = parseInt(prompt(`Disponemos de las siguientes opciones:\n1) Shorts\n2) Remeras\n3) Zapatillas\n4) Pantalón Largo\n¿Qué producto desea comprar?`));
+                opcionA = parseInt(prompt(`Disponemos de las siguientes opciones:\n1) Shorts\n2) Remeras\n3) Zapatillas\n4) Pantalon Largo\n¿Qué producto desea comprar?`));
                 
                 if (!isNaN(opcionA) && opcionA >= 1 && opcionA <= 4) {
                     break; // Salir del bucle si la opciónA es válida
